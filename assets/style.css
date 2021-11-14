@@ -1,1 +1,25 @@
+body {
+	font-family: sans-serif;
+	width: 1200px;
+	height: 800px;
+	background: url("../images/bg-desktop.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	display: inline-flex;
+	justify-content: space-around;
+}
 
+.containerLeft {
+	padding: 25px;
+	box-sizing: border-box;
+	height: 150px;
+	border-radius: 15px  80px 15px 15px;
+	background: hsl(228, 56%, 26%);
+}
+
+.containerRigth {
+	padding: 25px;
+	height: 150px;
+	background: hsl(228, 56%, 26%);
+	color: white;
+}
