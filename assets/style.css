@@ -10,6 +10,7 @@ body {
 }
 
 .containerLeft {
+	margin-top: 200px;
 	padding: 25px;
 	box-sizing: border-box;
 	height: 150px;
@@ -18,8 +19,59 @@ body {
 }
 
 .containerRigth {
+	width: 740px;
 	padding: 25px;
-	height: 150px;
+	height: 250px;
 	background: hsl(228, 56%, 26%);
-	color: white;
+}
+
+.balao2 {
+  background: white;
+  border-radius: 15px 15px 0px 15px;
+  width: 197px;
+  height: 70px;
+  position: relative;
+  margin: -3px 36px -4px 500px;
+}
+
+.balao2:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 22px solid transparent;
+  border-top: 20px solid white;
+  bottom: -20px;
+  left: 89%;
+}
+
+.fraseBalao {
+	padding: 8px;
+	font-weight: bold;
+}
+
+.progress {
+  width: 100%;
+  max-width: 260px;
+  height: 10px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar{
+	display: block;
+    height: 100%;
+    background: linear-gradient(
+    	90deg,hsl(6, 100%, 80%), 
+    	17%,hsl(335, 100%, 65%));
+    background-size: 300% 100%;
+    animation: progress-animation 5s;
+} 
+    
+@keyframes progress-animation {
+	0%;
+    background-position: 100%;
+  100%;
+    background-position: 0;
 }
