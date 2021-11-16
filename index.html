@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -16,7 +17,15 @@
     <img src="images/icon-upload.png">
   </div>
   <div class="containerRigth">
-    <h1>You’ve used 815 GB of your storage</h1>
+
+    <div class="titulo">
+      <h1>You’ve used</h1>
+      <p class="numero8Gb">8</p>
+      <p class="numero1Gb">1</p>
+      <p class="numero5Gb">5</p>
+      <p class="gbTitulo">Gb</p>
+      <h1>of your storage</h1>
+    </div>
     
     <div class="balao2">
       <div class="numerosGb"> 
@@ -30,8 +39,8 @@
     <div class="progress">
       <span class="progress-bar" style="width: 70%"></span>
     </div>
-    <p>0 GB</p>
-    <p>1000 GB</p>
+    <p class="quantidadeGb">0 GB</p>
+    <p class="quantidadeGb">1000 GB</p>
   </div>
 </body>
 </html>
