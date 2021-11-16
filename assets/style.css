@@ -26,10 +26,13 @@ body {
 }
 
 .balao2 {
+
+  display: flex;
+  justify-content: space-evenly;
   background: white;
   border-radius: 15px 15px 0px 15px;
-  width: 197px;
-  height: 70px;
+  width: 180px;
+  height: 75px;
   position: relative;
   margin: -3px 36px -4px 500px;
 }
@@ -42,12 +45,35 @@ body {
   border-left: 22px solid transparent;
   border-top: 20px solid white;
   bottom: -20px;
-  left: 89%;
+  left: 88%;
 }
 
 .fraseBalao {
-	padding: 8px;
+	color: gray;
+	text-transform: uppercase;
+	padding: 0px 10px;
+	align-items: center;
+	display: inline-flex;
 	font-weight: bold;
+	margin-right: 5px;
+
+}
+
+.numerosGb {
+	margin-left: 10px;
+	font-family: monospace;
+	font-size: 45px;
+	font-weight: 1000;
+ 	display: flex;
+ 	align-items: center;
+}
+
+.numero8Gb {
+	margin-top: 37px;
+}
+
+.numero5Gb {
+	margin-top: 47px;
 }
 
 .progress {
