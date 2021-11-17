@@ -7,40 +7,53 @@
   <title>Frontend Mentor | Fylo data storage component</title>
   <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/containerLeft.css">
+  <link rel="stylesheet" href="assets/containerRigth.css">
 </head>
 
 <body>
   <div class="containerLeft">
-    <img src="images/logo.png">
-    <img src="images/icon-document.png">
-    <img src="images/icon-folder.png">
-    <img src="images/icon-upload.png">
+    <img class="logo" src="images/logo.png">
+      <li class="iconList">
+        <ul class="iconBox">
+          <img class="imagesIcon" src="images/icon-document.png">
+        </ul>
+        <ul class="iconBox">
+          <img class="imagesIcon" src="images/icon-folder.png">
+        </ul>
+        <ul class="iconBox">
+          <img class="imagesIcon" src="images/icon-upload.png">
+        </ul>
+      </li>
   </div>
-  <div class="containerRigth">
 
-    <div class="titulo">
+  <div class="containerRigth">
+    <section class="title">
       <h1>You’ve used</h1>
-      <p class="numero8Gb">8</p>
-      <p class="numero1Gb">1</p>
-      <p class="numero5Gb">5</p>
-      <p class="gbTitulo">Gb</p>
+      <p class="number8Gb">8</p>
+      <p class="number1Gb">1</p>
+      <p class="number5Gb">5</p>
+      <p class="gbTitle">Gb</p>
       <h1>of your storage</h1>
-    </div>
+    </section>
     
-    <div class="balao2">
-      <div class="numerosGb"> 
-        <p class="numero1Gb">1</p>
-        <p class="numero8Gb">8</p>
-        <p class="numero5Gb">5</p>
+    <section class="balloon">
+      <div class="numberGb"> 
+        <p class="numberGb">1</p>
+        <p class="number8Gb">8</p>
+        <p class="number5Gb">5</p>
       </div>
-        <p class="fraseBalao">GB Left</p>
-    </div>
+        <p class="balloonPhrase">GB Left</p>
+    </section>
 
     <div class="progress">
-      <span class="progress-bar" style="width: 70%"></span>
+      <span class="progressBar" style="width: 70%"></span>
     </div>
-    <p class="quantidadeGb">0 GB</p>
-    <p class="quantidadeGb">1000 GB</p>
-  </div>
+    <div class="legendQuantity">
+      <p class="quantityGb">0 GB</p>
+      <p class="quantityGb">1000 GB</p>
+    </div>
+    
+  </section>
 </body>
 </html>
