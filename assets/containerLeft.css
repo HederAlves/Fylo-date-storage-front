@@ -1,0 +1,60 @@
+:root {
+	--containerColor: hsl(228, 56%, 26%);
+	--backgroundColor: hsl(229, 57%, 11%) ;
+}
+
+.containerLeft {
+	display:flex;
+	flex-direction: column;
+	margin: 390px 0px 0px 550px;
+	padding: 25px;
+	box-sizing: border-box;
+	width: 380px;
+	height: 220px;
+	border-radius: 10px  110px 10px 10px;
+	background: var(--containerColor);
+}
+
+.logo {
+	margin: 17px 0px 0px 10px;
+	width: 50%;
+}
+
+.iconList {
+	display: inline-flex;
+	justify-content: space-around;
+	width: 220px;
+	margin-top: 40px;
+}
+
+.iconBox {
+	display: inline-flex;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background: var(--backgroundColor);
+}
+
+.imagesIcon {
+	height: 25px;
+	width: 30px;
+	padding: 10px;
+}
+
+@media(max-width: 780px) {
+
+	.containerLeft {
+		margin: 100px 15px 0px 15px;
+		width: 345px;
+		height: 220px;
+	}
+
+	.iconBox {
+		height: 45px;
+	}
+
+	.iconList {
+		margin-top: 50px;
+		height: 100px;
+	}
+
+}
