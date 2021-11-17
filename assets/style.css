@@ -5,11 +5,11 @@
 
 body {
 	font-family: sans-serif;
-	height: 900px;
+	height: 1211px;
 	background: url("../images/bg-desktop.png"), var(--backgroundColor);
 	background-repeat: no-repeat;
 	background-position: bottom;
-	background-size: 2300px;
+	background-size: 2400px;
 	display: inline-flex;
 }
 
