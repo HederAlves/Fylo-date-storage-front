@@ -1,0 +1,183 @@
+.containerRigth {
+	margin: 450px 0px 0px 135px;
+	width: 650px;
+	padding: 15px;
+	height: 130px;
+	background: var(--containerColor);
+	border-radius: 10px;
+}
+
+.title {
+	font-size: 28px;
+	color: white;
+	font-family: monospace;
+ 	display: flex;
+ 	align-items: center;
+}
+
+h1 {
+	color: #E3E3E3;
+	font-size: 20px;
+	margin: 0px 10px;
+}
+
+.gbTitle {
+	font-weight: 700;
+	margin: 0px 5px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.balloon {
+  display: flex;
+  justify-content: space-evenly;
+  background: white;
+  border-radius: 15px 15px 0px 15px;
+  width: 180px;
+  height: 75px;
+  position: relative;
+  margin: -95px -25px 42px 445px;
+}
+
+.balloon:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 22px solid transparent;
+  border-top: 20px solid white;
+  bottom: -20px;
+  left: 88%;
+}
+
+.balloonPhrase {
+	color: gray;
+	text-transform: uppercase;
+	padding: 0px 10px;
+	align-items: center;
+	display: inline-flex;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.numberGb {
+	margin-left: 10px;
+	font-family: monospace;
+	font-size: 45px;
+	font-weight: 1000;
+ 	display: flex;
+ 	align-items: center;
+}
+
+.number1Gb {
+	font-weight: 700;
+}
+
+.number8Gb {
+	font-weight: 700;
+	margin-top: -10px;
+}
+
+.number5Gb {
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.progress {
+  width: 620px;
+  max-width: 620px;
+  height: 25px;
+  background: var(--backgroundColor);
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.progressBar {
+		display: block;
+    height: 69%;
+    width: 80%;
+    margin: 4px;
+    border-radius: 35px;
+    background-size: 300% 100%;
+    animation: progress-animation 5s;
+    background: linear-gradient(
+    90deg,hsl(6, 100%, 80%), 
+    17%,hsl(335, 100%, 65%));
+} 
+    
+@keyframes progress-animation {
+	0%;
+    background-position: 100%;
+  100%;
+    background-position: 0;
+}
+
+.quantityGb {
+	color: white;
+	display: inline-flex;
+}
+
+.legendQuantity {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 615px;
+	margin: 20px 0px 0px 5px;
+}
+
+@media(max-width: 780px) {
+
+	.containerRigth {
+		margin: 20px 15px 0px 15px;
+		font-size: 25px;
+		width: 315px;
+		height: 200px;
+	}
+
+	.title {
+		margin-top: 35px;
+		font-size: 25px;
+	}
+
+	h1 {
+		font-size: 13px;
+	}
+
+	.balloon {
+		width: 220px;
+		height: 95px;
+		margin: 100px 0px -190px 44px;
+		border-radius: 10px;
+	}
+
+	.balloon:after {
+		content: none;
+	}
+
+	.numberGb {
+		font-size: 50px;
+		font-weight: 900px;
+	}
+
+	.balloonPhrase {
+		font-size: 20px;
+		font-weight: 900;
+	}
+
+	.progress {
+		margin-left: 10px;
+		width: 285px;
+		max-width: 285px;
+		height: 40px;
+	}
+
+	.progressBar {
+		margin: 6px;
+	}
+
+	.legendQuantity {
+		width: 270px;
+		margin: 20px;
+		font-size: 14px;
+	}
+
+}
