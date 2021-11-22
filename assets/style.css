@@ -20,7 +20,7 @@ body {
 		background: url("../images/bg-mobile.png"), var(--backgroundColor);
 		background-repeat: no-repeat;
 		background-size: 475px;
-		height: 810px;
+		height: 755px;
 		background-position: center;
 	}
 
